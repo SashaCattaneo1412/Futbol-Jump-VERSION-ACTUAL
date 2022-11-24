@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+.player 
+{
+position: absolute;
+width: 80px;
+height: 160px;
+bottom: 50px;
+}
+.player img{
+
+    width: 100%;
+    height: 100%;
+}
+
+.obstacle
+{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 50px;
+}
+.obstacle img
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+@keyframes slideright {
+    from {
+        background-position: 40000%;
+    }
+    to {
+        background-position: 0%;
+    }
+  }
+  
+  @-webkit-keyframes slideright {
+    from {
+        background-position: 40000%;
+    }
+    to {
+        background-position: 0%;
+    }
+  }
+  
+
+
+
+:root
+{
+    position: absolute;
+    bottom: 0px;
+    background-image: url('pixil-gif-drawing (1).gif');
+    background-repeat: repeat-x;
+    animation: slideright 50s infinite linear;
+    -webkit-animation: slideright 50s infinite linear;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+#scoreContainer{
+   font-size: 50px;
+    text-align: right;
+    color: black;
+    direction: ltr;
+}
+
+#score{
+    font-size: 80px;
+}
+
+
+
+   

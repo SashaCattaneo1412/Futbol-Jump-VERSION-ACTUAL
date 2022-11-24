@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+:root{
+    background-image: url(Inicio.gif);
+    background-size: cover;
+    background-position: center;
+    bottom: 0px;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Nova Square', cursive;
+
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.flex-column{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+.btn{
+
+    padding: 2.8rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background: rgb(253, 253, 253);
+    border-radius: 4px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(18, 229, 236, 0.925);
+    transition: transform 150ms;
+    transform: scale(1.03);
+    
+}
+.btn[ disabled]:hover{
+    cursor: not-allowed;
+    box-shadow:none;
+    transform: none;
+    
+}
+
+
+
+.btn-JDN {
+	
+	padding: 90px 170px; /* Relleno del boton */
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 8px 15px rgba(246, 246, 246, 0.1);
+	z-index: 99;
+    background-image: url(play.png);
+    background-size: 100% 100%;
+    border: none;
+    cursor: pointer;
+
+}
+.btn-JDN:hover {
+	box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.845);
+	transform: translateY(-7px);
+}
+@media only screen and (max-width: 600px) {
+ 	.btn-JDN {
+		
+		padding: 12px 20px;
+		
+	}
+} 
+
+.btn-Exit {
+	padding: 90px 170px; /* Relleno del boton */
+	transition: all 300ms ease 0ms;
+	box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.1);
+	z-index: 99;
+    background-image: url(Exit.png);
+    background-size: 100% 100%;
+    border: none;
+    cursor: pointer;
+
+}
+.btn-Exit:hover {
+	box-shadow: 0px 15px 20px rgb(255, 255, 255);
+	transform: translateY(-7px);
+}
+@media only screen and (max-width: 600px) {
+ 	.btn-Exit {
+		padding: 12px 20px;
+	}
+} 
